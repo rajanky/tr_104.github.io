@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training TR-104 Report</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="https://www.gndec.ac.in/"><img src="logo.png" alt="GNDEC Logo"></a>
+            <a href="#" class="home-button" onclick="showSection('home')">Home</a>
+            
+        </header>
+
+        <section id="home" class="section active">
+            <h1>Training TR-104 Report</h1>
+            <p>By Rajan Kumar Yadav, URN 2203537 <br> Guru Nanak Dev Engineering College Ludhiana</p>
+            <h2>6 Month Internship at <br>Devologix IT Solutions</h2>
+        </section>
+
+        <nav id="monthNav">
+            <a href="#" onclick="showMonth(1)">Month 1</a>
+            <a href="#" onclick="showMonth(2)">Month 2</a>
+            <a href="#" onclick="showMonth(3)">Month 3</a>
+            <a href="#" onclick="showMonth(4)">Month 4</a>
+            <a href="#" onclick="showMonth(5)">Month 5</a>
+            <a href="#" onclick="showMonth(6)">Month 6</a>
+        </nav>
+
+        <nav id="weekNav" style="display: none;">
+            <button class="back-button" onclick="backToMonths()">← Back to Months</button>
+            <div id="weekButtons"></div>
+        </nav>
+
+        <!-- Week sections will be dynamically generated -->
+        <div id="weekSections"></div>
+        
+
+        <div class="button-container">
+            <button class="github-button" onclick="window.location.href=''">Training Report GitHub Repository</button>
+            <button class="github-button" onclick="window.location.href=''">Training Project Github Repository</button>
+        </div>
+        
+        <footer>
+            <a href="">&copy; Rajan Kumar Yadav</a>
+        </footer>
+
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
